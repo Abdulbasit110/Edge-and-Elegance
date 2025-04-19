@@ -31,7 +31,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   };
 
   return (
-    <div className="product-card">
+    <div className="product-card group">
       <Link to={`/product/${product.id}`}>
         <div className="product-card-img-container">
           <img src={product.image} alt={product.name} className="product-card-img" />

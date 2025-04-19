@@ -104,7 +104,7 @@
   }
   
   .product-card {
-    @apply relative overflow-hidden bg-white group transition-all duration-300;
+    @apply relative overflow-hidden bg-white transition-all duration-300;
   }
   
   .product-card-img-container {
@@ -112,7 +112,11 @@
   }
   
   .product-card-img {
-    @apply object-cover w-full h-full transition-transform duration-700 ease-in-out group-hover:scale-105;
+    @apply object-cover w-full h-full transition-transform duration-700 ease-in-out;
+  }
+  
+  .group:hover .product-card-img {
+    @apply scale-105;
   }
   
   .product-card-content {
