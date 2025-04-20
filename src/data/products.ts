@@ -1,4 +1,15 @@
-
+import { Slot } from '@radix-ui/react-slot';
+import hublotWatch from '@/assets/images/men/hublot watch.jpg';
+import tissotWatch from '@/assets/images/men/Tissot silver chain watch.jpg';
+import rolexBraclet from '@/assets/images/men/rolex braclet.jpg';
+import blueRolexBraclet from '@/assets/images/men/blur rolex braclet.jpg'
+import blackRolexBraclet from '@/assets/images/men/black rolex bracelt.jpg'
+import silwerblackRolexBraclet from '@/assets/images/men/silwerand black.jpg'
+import blackFashionBraclet from '@/assets/images/men/black fashion braclet.jpg'
+import fashionGoldenRolexChain from '@/assets/images/men/golden rolex braclet with fashionable chain.jpg'
+import goldenBangle from '@/assets/images/men/golden bangle.jpg'
+import locketNecklace from '@/assets/images/men/silwer locket necklace.jpg'
+import silmNeckchain from '@/assets/images/men/slim silwer neckchain.jpg'
 export interface Product {
   id: string;
   name: string;
@@ -20,15 +31,17 @@ export const products: Product[] = [
   // Men's Products
   {
     id: 'm1',
-    name: 'Classic Leather Watch',
-    description: 'A timeless leather watch with precision Swiss movement and scratch-resistant sapphire crystal.',
-    price: 299.99,
+    name: 'Hublot black Watch',
+    description: 'Luxury Hublot watch with a black leather strap and stainless steel case, perfect for any occasion.',
+    price: 2499,
     category: 'jewelry',
     subcategory: 'watches',
     gender: 'men',
-    image: 'https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    image: hublotWatch,
+    // 'https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
     images: [
-      'https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      hublotWatch,
+      // 'https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
       'https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
       'https://images.unsplash.com/photo-1619994121345-b61cd610c5fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
     ],
@@ -40,15 +53,17 @@ export const products: Product[] = [
   },
   {
     id: 'm2',
-    name: 'Minimalist Bracelet',
-    description: 'A sleek and understated bracelet made with premium materials for everyday elegance.',
-    price: 129.99,
+    name: 'Tissot Silver Chain Watch',
+    description: 'Stylish silver chain watch with a minimalist design, perfect for any occasion.',
+    price: 3499,
     category: 'jewelry',
-    subcategory: 'bracelets',
+    subcategory: 'watches',
     gender: 'men',
-    image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    image: tissotWatch,
+    // 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
     images: [
-      'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      tissotWatch,
+      // 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
       'https://images.unsplash.com/photo-1624526267639-1c24a527a48e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
       'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
     ],
@@ -60,17 +75,22 @@ export const products: Product[] = [
   },
   {
     id: 'm3',
-    name: 'Premium Leather Wallet',
-    description: 'Handcrafted premium leather wallet with multiple compartments for cards and cash.',
-    price: 89.99,
-    category: 'leather goods',
-    subcategory: 'wallets',
+    name: 'Rolex Braclet',
+    description: 'Luxury Rolex bracelet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    price: 1799,
+    category: 'jewelry',
+    subcategory: 'braclets',
     gender: 'men',
-    image: 'https://images.unsplash.com/photo-1627123424574-724758594e93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    image: rolexBraclet,
+    // 'https://images.unsplash.com/photo-1627123424574-724758594e93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
     images: [
-      'https://images.unsplash.com/photo-1627123424574-724758594e93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1559694204-49dee8a482c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1517254797898-04edd251bfb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+      rolexBraclet,
+      blueRolexBraclet,
+      blackRolexBraclet,
+      silwerblackRolexBraclet
+      // 'https://images.unsplash.com/photo-1627123424574-724758594e93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1559694204-49dee8a482c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1517254797898-04edd251bfb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
     ],
     colors: ['Black', 'Brown', 'Tan'],
     materials: ['Full-grain Leather'],
@@ -80,17 +100,20 @@ export const products: Product[] = [
   },
   {
     id: 'm4',
-    name: 'Business Briefcase',
-    description: 'An elegant briefcase designed for the modern professional, featuring multiple compartments.',
-    price: 349.99,
-    category: 'bags',
-    subcategory: 'briefcases',
+    name: 'Black Fashion Braclet',
+    description: 'Stylish black fashion bracelet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    price: 399 ,
+    category: 'jewelry',
+    subcategory: 'braclets',
     gender: 'men',
-    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    image: 
+    blackFashionBraclet,
+    // 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
     images: [
-      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1596273501899-0cba9147aa12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+      blackFashionBraclet,
+      // 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1596273501899-0cba9147aa12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
     ],
     colors: ['Black', 'Dark Brown'],
     materials: ['Full-grain Leather', 'Brass Hardware'],
@@ -100,17 +123,89 @@ export const products: Product[] = [
   },
   {
     id: 'm5',
-    name: 'Leather Loafers',
-    description: 'Premium handcrafted leather loafers designed for comfort and sophistication.',
-    price: 199.99,
-    category: 'footwear',
-    subcategory: 'loafers',
+    name: 'Golden Fashionable Rolex Chain',
+    description: 'Luxury Rolex chain with a fashionable design, perfect for adding a touch of elegance to any outfit.',
+    price: 1899,
+    category: 'jewelry',
+    subcategory: 'braclets',
     gender: 'men',
-    image: 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    image: 
+  fashionGoldenRolexChain,
+    // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
     images: [
-      'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+      fashionGoldenRolexChain,
+      // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+    ],
+    colors: ['Brown', 'Black', 'Burgundy'],
+    materials: ['Full-grain Leather', 'Leather Sole'],
+    isFeatured: false,
+    isNewArrival: true,
+    inStock: true
+  },
+  {
+    id: 'm6',
+    name: 'Golden Bangle',
+    description: 'Luxury golden bangle with a fashionable design, perfect for adding a touch of elegance to any outfit.',
+    price:999 ,
+    category: 'jewelry',
+    subcategory: 'braclets',
+    gender: 'men',
+    image: 
+  goldenBangle,
+    // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    images: [
+      goldenBangle,
+      // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+    ],
+    colors: ['Brown', 'Black', 'Burgundy'],
+    materials: ['Full-grain Leather', 'Leather Sole'],
+    isFeatured: false,
+    isNewArrival: true,
+    inStock: true
+  },
+  {
+    id: 'm7',
+    name: 'Octagon Locket Necklace',
+    description: 'Stylish octagon locket necklace made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    price:399 ,
+    category: 'jewelry',
+    subcategory: 'necklaces',
+    gender: 'men',
+    image: 
+  locketNecklace,
+    // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    images: [
+      locketNecklace,
+      // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+    ],
+    colors: ['Brown', 'Black', 'Burgundy'],
+    materials: ['Full-grain Leather', 'Leather Sole'],
+    isFeatured: false,
+    isNewArrival: true,
+    inStock: true
+  },
+  {
+    id: 'm8',
+    name: 'Slim Silver Neckchain',
+    description: 'Stylish slim silver neckchain made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    price:249 ,
+    category: 'jewelry',
+    subcategory: 'necklaces',
+    gender: 'men',
+    image: 
+  silmNeckchain,
+    // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    images: [
+      silmNeckchain,
+      // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
     ],
     colors: ['Brown', 'Black', 'Burgundy'],
     materials: ['Full-grain Leather', 'Leather Sole'],
