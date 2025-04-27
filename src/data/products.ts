@@ -1,4 +1,6 @@
+import { CalendarProps } from './../components/ui/calendar';
 import { Slot } from '@radix-ui/react-slot';
+// men
 import hublotWatch from '@/assets/images/men/hublot watch.jpg';
 import tissotWatch from '@/assets/images/men/Tissot silver chain watch.jpg';
 import rolexBraclet from '@/assets/images/men/rolex braclet.jpg';
@@ -10,6 +12,14 @@ import fashionGoldenRolexChain from '@/assets/images/men/golden rolex braclet wi
 import goldenBangle from '@/assets/images/men/golden bangle.jpg'
 import locketNecklace from '@/assets/images/men/silwer locket necklace.jpg'
 import silmNeckchain from '@/assets/images/men/slim silwer neckchain.jpg'
+import cubicHandBracelet from "@/assets/images/men/cubic hand bracelet.jpg"
+import blackNeckChain from "@/assets/images/men/black neck chain.jpg"
+import silverBracelet from "@/assets/images/men/silver bracelet.jpg"
+import goldenLocketChain from "@/assets/images/men/golden locket chain.jpg"
+import blackJesusChain from "@/assets/images/men/black jesus chain.jpg"
+import wovenBracelet from "@/assets/images/men/woven design bracelet.jpg"
+// women
+import chanelNeckChain from '@/assets/images/women/chanel neck chain.jpg'
 export interface Product {
   id: string;
   name: string;
@@ -213,22 +223,156 @@ export const products: Product[] = [
     isNewArrival: true,
     inStock: true
   },
-  
+  {
+    id: 'm9',
+    name: 'Cubic Hand Bracelet',
+    description: 'Stylish cubic hand bracelet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    price:249 ,
+    category: 'jewelry',
+    subcategory: 'braclets',
+    gender: 'men',
+    image: 
+  cubicHandBracelet,
+    // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    images: [
+      cubicHandBracelet,
+      // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+    ],
+    colors: ['Brown', 'Black', 'Burgundy'],
+    materials: ['metal'],
+    isFeatured: false,
+    isNewArrival: true,
+    inStock: true
+  },
+  {
+    id: 'm10',
+    name: 'Black Neck Chain',
+    description: 'Stylish black neck chain made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    price:149 ,
+    category: 'jewelry',
+    subcategory: 'necklaces',
+    gender: 'men',
+    image: 
+  blackNeckChain,
+    // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    images: [
+      blackNeckChain,
+      // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+    ],
+    colors: ['Brown', 'Black', 'Burgundy'],
+    materials: ['metal'],
+    isFeatured: false,
+    isNewArrival: true,
+    inStock: true
+  },
+  {
+    id: 'm11',
+    name: 'Silver Bracelet',
+    description: 'Stylish silver bracelet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    price: 299,
+    category: 'jewelry',
+    subcategory: 'braclets',
+    gender: 'men',
+    image: 
+  silverBracelet,
+    // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    images: [
+      silverBracelet,
+      // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+    ],
+    colors: ['Brown', 'Black', 'Burgundy'],
+    materials: ['metal'],
+    isFeatured: false,
+    isNewArrival: true,
+    inStock: true
+  },
+  {
+    id: 'm12',
+    name: 'Golden Locket Chain',
+    description: 'Stylish golden locket chain made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    price: 399,
+    category: 'jewelry',
+    subcategory: 'necklaces',
+    gender: 'men',
+    image: 
+  goldenLocketChain,
+    // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    images: [
+      goldenLocketChain,
+      // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+    ],
+    colors: ['Brown', 'Black', 'Burgundy'],
+    materials: ['metal'],
+    isFeatured: false,
+    isNewArrival: true,
+    inStock: true
+  },
+  {
+    id: 'm13',
+    name: 'Black Jesus Chain',
+    description: 'Stylish black Jesus chain made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    price:299 ,
+    category: 'jewelry',
+    subcategory: 'necklaces',
+    gender: 'men',
+    image: 
+  blackJesusChain,
+    // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    images: [
+      blackJesusChain,
+      // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+    ],
+    colors: ['Brown', 'Black', 'Burgundy'],
+    materials: ['metal'],
+    isFeatured: false,
+    isNewArrival: true,
+    inStock: true
+  },
+  {
+    id: 'm14',
+    name: 'Woven Design Bracelet',
+    description: 'Stylish woven design bracelet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    price:799 ,
+    category: 'jewelry',
+    subcategory: 'braclets',
+    gender: 'men',
+    image: 
+  wovenBracelet,
+    // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    images: [
+        wovenBracelet,
+      // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+      // 'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+    ],
+    colors: ['Brown', 'Black', 'Burgundy'],
+    materials: ['metal'],
+    isFeatured: false,
+    isNewArrival: true,
+    inStock: true
+  },
   // Women's Products
   {
     id: 'w1',
-    name: 'Diamond Stud Earrings',
-    description: 'Classic diamond stud earrings set in 18k white gold, perfect for any occasion.',
-    price: 499.99,
+    name: 'Chanel Neck Chain',
+    description: 'Luxury Chanel neck chain with a stylish design, perfect for adding a touch of elegance to any outfit.',
+    price: 399,
     category: 'jewelry',
-    subcategory: 'earrings',
+    subcategory: 'necklaces',
     gender: 'women',
-    image: 'https://images.unsplash.com/photo-1610694955371-d4a3e0ce4b52?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1610694955371-d4a3e0ce4b52?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1599458252573-56ae36120de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1589674781759-b5a75787eb01?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
-    ],
+    image:chanelNeckChain , images: [
+      chanelNeckChain,
+       ],
     colors: ['White Gold', 'Yellow Gold', 'Rose Gold'],
     materials: ['18k Gold', 'Diamond'],
     isFeatured: true,

@@ -311,10 +311,10 @@ const ProductDetail = () => {
           {/* Product Details Tabs */}
           <div className="mb-16">
             <Tabs defaultValue="details">
-              <TabsList className="w-full grid grid-cols-3 mb-8">
+              <TabsList className="w-full grid grid-cols-2 mb-8">
                 <TabsTrigger value="details">Product Details</TabsTrigger>
                 <TabsTrigger value="materials">Materials & Care</TabsTrigger>
-                <TabsTrigger value="shipping">Shipping & Returns</TabsTrigger>
+                {/* <TabsTrigger value="shipping">Shipping & Returns</TabsTrigger> */}
               </TabsList>
               <TabsContent
                 value="details"
