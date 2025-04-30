@@ -22,6 +22,9 @@ import wovenBracelet from "@/assets/images/men/woven design bracelet.jpg"
 import chanelNeckChain from '@/assets/images/women/chanel neck chain.jpg'
 import heartChain from '@/assets/images/women/heart chain.jpg'
 import blackFloralBracelet from '@/assets/images/women/black floral bracelet.jpg'
+import diamondHeartKara from '@/assets/images/women/diamond  heart kara.jpg'
+import goldenFashionableKara from '@/assets/images/women/Golden fashionable kara.jpg'
+import goldenBallChain from '@/assets/images/women/Golden Ball Chain.jpg'
 export interface Product {
   id: string;
   name: string;
@@ -392,7 +395,7 @@ export const products: Product[] = [
     image: heartChain,
     images: [
       heartChain],
-    colors: ['Golden Pearl'],
+    colors: ['Gold'],
     materials: ['Freshwater Pearl', 'Sterling Silver'],
     isFeatured: true,
     isNewArrival: true,
@@ -409,7 +412,58 @@ export const products: Product[] = [
     image: blackFloralBracelet,
     images: [
       blackFloralBracelet,],
-    colors: ['Black'],
+    colors: ['Gold'],
+    materials: ["metal"],
+    isFeatured: true,
+    isNewArrival: false,
+    inStock: true
+  },
+  {
+    id: 'w4',
+    name: 'Diamond Heart Kara',
+    description: 'Diamond Heart Kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
+    price: 499,
+    category: 'jewelry',
+    subcategory: 'braclets',
+    gender: 'women',
+    image: diamondHeartKara,
+    images: [
+      diamondHeartKara,],
+    colors: ['Gold'],
+    materials: ["metal"],
+    isFeatured: true,
+    isNewArrival: false,
+    inStock: true
+  },
+  {
+    id: 'w5',
+    name: 'Golden Fashionable Kara',
+    description: 'Golden Fashionable Kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
+    price: 799,
+    category: 'jewelry',
+    subcategory: 'braclets',
+    gender: 'women',
+    image: goldenFashionableKara,
+    images: [
+      goldenFashionableKara,],
+    colors: ['Gold'],
+    materials: ["metal"],
+    isFeatured: true,
+    isNewArrival: false,
+    inStock: true
+  },
+  {
+    id: 'w6',
+    name: 'Golden Ball Chain',
+    description: 'Golden Ball Chain with a stylish design, perfect for adding a touch of elegance to any outfit.',
+    price: 699,
+    category: 'jewelry',
+    subcategory: 'necklaces',
+    gender: 'women',
+    image: goldenBallChain,
+    images: [
+      goldenBallChain],
+    colors: ['Gold'],
     materials: ["metal"],
     isFeatured: true,
     isNewArrival: false,

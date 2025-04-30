@@ -96,14 +96,14 @@ const ProductDetail = () => {
                   ? "Men's Collection"
                   : "Women's Collection"}
               </Link>
-              <span className="mx-2 text-neutral-400">/</span>
-              <Link
+              {/* <span className="mx-2 text-neutral-400">/</span> */}
+              {/* <Link
                 to={`/${product.gender}/${product.category}`}
                 className="text-neutral-500 hover:text-neutral-900"
               >
                 {product.category.charAt(0).toUpperCase() +
                   product.category.slice(1)}
-              </Link>
+              </Link> */}
               <span className="mx-2 text-neutral-400">/</span>
               <span className="text-neutral-900">{product.name}</span>
             </nav>
