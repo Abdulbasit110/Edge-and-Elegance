@@ -8,6 +8,7 @@ import ProductCard from "@/components/ProductCard";
 import { getFeaturedProducts, getNewArrivals } from "@/data/products";
 import menImage from "@/assets/men cover.jpg";
 import heroImage from "@/assets/hero image.jpg";
+import heartChain from "@/assets/images/women/heart chain.jpg";
 const Index = () => {
   const featuredProducts = getFeaturedProducts().slice(0, 4);
   const newArrivals = getNewArrivals().slice(0, 3);
@@ -91,8 +92,7 @@ const Index = () => {
               {/* Women's Collection */}
               <div className="relative overflow-hidden rounded-lg aspect-[4/5] group">
                 <img
-                  // src={menImage}
-                  src="https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                  src={heartChain}
                   alt="Women's Collection"
                   className="absolute w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -123,14 +123,14 @@ const Index = () => {
                 <ProductCard key={product.id} product={product} />
               ))}
             </div>
-            <div className="text-center mt-12">
+            {/* <div className="text-center mt-12">
               <Link to="/products">
                 <Button variant="outline" className="group">
                   View All Products
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -143,14 +143,14 @@ const Index = () => {
                 <ProductCard key={product.id} product={product} />
               ))}
             </div>
-            <div className="text-center mt-12">
+            {/* <div className="text-center mt-12">
               <Link to="/new-arrivals">
                 <Button variant="outline" className="group">
                   View All New Arrivals
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 

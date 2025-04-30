@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
 import { getWomensProducts } from '@/data/products';
+import heartChain from "@/assets/images/women/heart chain.jpg"
 
 const WomenCollection = () => {
   const allProducts = getWomensProducts();
@@ -63,7 +64,7 @@ const WomenCollection = () => {
         <div className="relative h-[40vh] overflow-hidden">
           <div className="absolute inset-0 bg-black/40 z-10"></div>
           <img 
-            src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" 
+            src= {heartChain}
             alt="Women's Collection" 
             className="absolute w-full h-full object-cover"
           />

@@ -20,6 +20,8 @@ import blackJesusChain from "@/assets/images/men/black jesus chain.jpg"
 import wovenBracelet from "@/assets/images/men/woven design bracelet.jpg"
 // women
 import chanelNeckChain from '@/assets/images/women/chanel neck chain.jpg'
+import heartChain from '@/assets/images/women/heart chain.jpg'
+import blackFloralBracelet from '@/assets/images/women/black floral bracelet.jpg'
 export interface Product {
   id: string;
   name: string;
@@ -86,7 +88,7 @@ export const products: Product[] = [
   {
     id: 'm3',
     name: 'Rolex Braclet',
-    description: 'Luxury Rolex bracelet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    description: 'Luxury Rolex braclet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
     price: 1799,
     category: 'jewelry',
     subcategory: 'braclets',
@@ -111,7 +113,7 @@ export const products: Product[] = [
   {
     id: 'm4',
     name: 'Black Fashion Braclet',
-    description: 'Stylish black fashion bracelet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    description: 'Stylish black fashion braclet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
     price: 399 ,
     category: 'jewelry',
     subcategory: 'braclets',
@@ -225,8 +227,8 @@ export const products: Product[] = [
   },
   {
     id: 'm9',
-    name: 'Cubic Hand Bracelet',
-    description: 'Stylish cubic hand bracelet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    name: 'Cubic Hand Braclet',
+    description: 'Stylish cubic hand braclet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
     price:249 ,
     category: 'jewelry',
     subcategory: 'braclets',
@@ -271,8 +273,8 @@ export const products: Product[] = [
   },
   {
     id: 'm11',
-    name: 'Silver Bracelet',
-    description: 'Stylish silver bracelet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    name: 'Silver Braclet',
+    description: 'Stylish silver braclet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
     price: 299,
     category: 'jewelry',
     subcategory: 'braclets',
@@ -340,8 +342,8 @@ export const products: Product[] = [
   },
   {
     id: 'm14',
-    name: 'Woven Design Bracelet',
-    description: 'Stylish woven design bracelet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
+    name: 'Woven Design Braclet',
+    description: 'Stylish woven design braclet made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
     price:799 ,
     category: 'jewelry',
     subcategory: 'braclets',
@@ -381,19 +383,16 @@ export const products: Product[] = [
   },
   {
     id: 'w2',
-    name: 'Pearl Necklace',
-    description: 'Elegant freshwater pearl necklace with sterling silver clasp, a timeless addition to any collection.',
-    price: 249.99,
+    name: 'Golden Heart Chain',
+    description: 'Luxury Golden Heart Chain with a stylish design, perfect for adding a touch of elegance to any outfit.',
+    price: 399,
     category: 'jewelry',
     subcategory: 'necklaces',
     gender: 'women',
-    image: 'https://images.unsplash.com/photo-1611591321763-8b63d6ae6d41?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    image: heartChain,
     images: [
-      'https://images.unsplash.com/photo-1611591321763-8b63d6ae6d41?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1589128777073-263566ae5e4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
-    ],
-    colors: ['White Pearl'],
+      heartChain],
+    colors: ['Golden Pearl'],
     materials: ['Freshwater Pearl', 'Sterling Silver'],
     isFeatured: true,
     isNewArrival: true,
@@ -401,64 +400,22 @@ export const products: Product[] = [
   },
   {
     id: 'w3',
-    name: 'Designer Tote Bag',
-    description: 'Spacious and stylish designer tote bag made from premium materials with multiple compartments.',
-    price: 379.99,
-    category: 'bags',
-    subcategory: 'totes',
+    name: 'Floral Braclet',
+    description: 'Luxury floral braclet with a stylish design, perfect for adding a touch of elegance to any outfit.',
+    price: 499,
+    category: 'jewelry',
+    subcategory: 'braclets',
     gender: 'women',
-    image: 'https://images.unsplash.com/photo-1594223274512-ad4803739b7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    image: blackFloralBracelet,
     images: [
-      'https://images.unsplash.com/photo-1594223274512-ad4803739b7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1591561954555-607968c989ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
-    ],
-    colors: ['Black', 'Camel', 'Navy'],
-    materials: ['Full-grain Leather', 'Cotton Lining'],
+      blackFloralBracelet,],
+    colors: ['Black'],
+    materials: ["metal"],
     isFeatured: true,
     isNewArrival: false,
     inStock: true
   },
-  {
-    id: 'w4',
-    name: 'Evening Clutch',
-    description: 'Elegant evening clutch with gold-tone hardware, perfect for formal events and special occasions.',
-    price: 159.99,
-    category: 'bags',
-    subcategory: 'clutches',
-    gender: 'women',
-    image: 'https://images.unsplash.com/photo-1584915003591-a394ea58efc3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1584915003591-a394ea58efc3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1575811078146-0138618bcfff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1566958247317-7337541c6bc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
-    ],
-    colors: ['Black', 'Gold', 'Silver'],
-    materials: ['Premium Leather', 'Metal Hardware'],
-    isFeatured: false,
-    isNewArrival: true,
-    inStock: true
-  },
-  {
-    id: 'w5',
-    name: 'Leather Sandals',
-    description: 'Handcrafted premium leather sandals designed for comfort and style.',
-    price: 149.99,
-    category: 'footwear',
-    subcategory: 'sandals',
-    gender: 'women',
-    image: 'https://images.unsplash.com/photo-1534653299134-96a171b61581?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1534653299134-96a171b61581?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1562273138-f46be4ebdf33?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1581101767113-1677fc2beaa8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
-    ],
-    colors: ['Brown', 'Black', 'Tan'],
-    materials: ['Full-grain Leather', 'Leather Sole'],
-    isFeatured: true,
-    isNewArrival: false,
-    inStock: true
-  }
+  
 ];
 
 export const getFeaturedProducts = () => products.filter(product => product.isFeatured);

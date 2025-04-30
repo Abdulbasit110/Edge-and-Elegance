@@ -54,7 +54,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/ele.gance789?igsh=MW5rbzQ3ODNob2xyag%3D%3D&utm_source=qr"
                 className="text-neutral-800 hover:text-gold transition-colors"
               >
                 <svg
