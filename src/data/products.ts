@@ -25,6 +25,9 @@ import blackFloralBracelet from '@/assets/images/women/black floral bracelet.jpg
 import diamondHeartKara from '@/assets/images/women/diamond  heart kara.jpg'
 import goldenFashionableKara from '@/assets/images/women/Golden fashionable kara.jpg'
 import goldenBallChain from '@/assets/images/women/Golden Ball Chain.jpg'
+import goldPinkFashionEarRings from '@/assets/images/women/gold pink ear rings.jpg'
+import goldBlueFashionEarRings from '@/assets/images/women/gold blue ear rings.jpg'
+import goldVersaceKara from '@/assets/images/women/gold versace kara.jpg'
 export interface Product {
   id: string;
   name: string;
@@ -464,6 +467,41 @@ export const products: Product[] = [
     images: [
       goldenBallChain],
     colors: ['Gold'],
+    materials: ["metal"],
+    isFeatured: true,
+    isNewArrival: false,
+    inStock: true
+  },
+  {
+    id: 'w7',
+    name: 'Golden fashion ear rings',
+    description: 'Golden fashion ear rings with a stylish design, perfect for adding a touch of elegance to any outfit.',
+    price: 599,
+    category: 'jewelry',
+    subcategory: 'earrings',
+    gender: 'women',
+    image: goldPinkFashionEarRings,
+    images: [
+      goldPinkFashionEarRings,
+    goldBlueFashionEarRings],
+    colors: ['Pink','Blue',],
+    materials: ["metal"],
+    isFeatured: true,
+    isNewArrival: false,
+    inStock: true
+  },
+  {
+    id: 'w8',
+    name: 'Golden versace kara',
+    description: 'Golden versace kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
+    price: 699,
+    category: 'jewelry',
+    subcategory: 'braclets',
+    gender: 'women',
+    image: goldVersaceKara,
+    images: [
+      goldVersaceKara],
+    colors: ['Pink','Blue',],
     materials: ["metal"],
     isFeatured: true,
     isNewArrival: false,
