@@ -332,7 +332,7 @@ export const products: Product[] = [
     id: 'm13',
     name: 'Black Jesus Chain',
     description: 'Stylish black Jesus chain made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
-    price:299 ,
+    price:349 ,
     category: 'jewelry',
     subcategory: 'necklaces',
     gender: 'men',
