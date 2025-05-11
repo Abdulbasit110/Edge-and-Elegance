@@ -18,6 +18,11 @@ import silverBracelet from "@/assets/images/men/silver bracelet.jpg"
 import goldenLocketChain from "@/assets/images/men/golden locket chain.jpg"
 import blackJesusChain from "@/assets/images/men/black jesus chain.jpg"
 import wovenBracelet from "@/assets/images/men/woven design bracelet.jpg"
+import rolexSilverBlueWatch from '@/assets/images/men/rolex silver blue watch.jpg';
+import rolexGreenSilverWatch from '@/assets/images/men/rolex green silver watch.jpg';
+import rolexGoldBlueWatch from '@/assets/images/men/rolex gold blue watch.jpg';
+import rolexBlackSilverWatch from '@/assets/images/men/rolex black silver watch.jpg';
+import rolexGoldBlackWatch from '@/assets/images/men/rolex gold black watch.jpg';
 // women
 import chanelNeckChain from '@/assets/images/women/chanel neck chain.jpg'
 import heartChain from '@/assets/images/women/heart chain.jpg'
@@ -366,6 +371,28 @@ export const products: Product[] = [
     colors: ['Brown', 'Black', 'Burgundy'],
     materials: ['metal'],
     isFeatured: false,
+    isNewArrival: true,
+    inStock: true
+  },
+  {
+    id: 'm15',
+    name: 'Luxury Rolex Watch Collection',
+    description: 'Exclusive collection of premium Rolex watches featuring multiple color combinations and styles, perfect for the discerning gentleman.',
+    price: 2999,
+    category: 'jewelry',
+    subcategory: 'watches',
+    gender: 'men',
+    image: rolexGoldBlackWatch,
+    images: [
+      rolexGoldBlackWatch,
+      rolexBlackSilverWatch,
+      rolexGoldBlueWatch,
+      rolexGreenSilverWatch,
+      rolexSilverBlueWatch
+    ],
+    colors: ['Gold-Black', 'Black-Silver', 'Gold-Blue', 'Green-Silver', 'Silver-Blue'],
+    materials: ['Stainless Steel', '18k Gold', 'Sapphire Crystal'],
+    isFeatured: true,
     isNewArrival: true,
     inStock: true
   },
