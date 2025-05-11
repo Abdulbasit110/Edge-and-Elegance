@@ -27,6 +27,7 @@ import patekPhilippeWhiteDialWatch from '@/assets/images/men/patek philippe whil
 import patekPhilippeWhiteBlueWatch from '@/assets/images/men/patek philippe while blue watch.jpg';
 import rolexSuperlativeBlackSilver from '@/assets/images/men/rolex superlative black and silver.jpg';
 import rolexSuperlativeGoldSilver from '@/assets/images/men/rolex superlative gold and silver.jpg';
+import blackBangle from '@/assets/images/men/black bangle.jpg';
 // women
 import chanelNeckChain from '@/assets/images/women/chanel neck chain.jpg'
 import heartChain from '@/assets/images/women/heart chain.jpg'
@@ -173,24 +174,20 @@ export const products: Product[] = [
   },
   {
     id: 'm6',
-    name: 'Golden Bangle',
-    description: 'Luxury golden bangle with a fashionable design, perfect for adding a touch of elegance to any outfit.',
-    price:999 ,
+    name: 'Premium Bangle Duo Collection',
+    description: 'Exclusive bangle collection featuring two stunning pieces - a classic golden bangle and a sophisticated black bangle, perfect for adding elegance to any outfit.',
+    price: 899,
     category: 'jewelry',
     subcategory: 'braclets',
     gender: 'men',
-    image: 
-  goldenBangle,
-    // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    image: goldenBangle,
     images: [
       goldenBangle,
-      // 'https://images.unsplash.com/photo-1614253429340-98120bd6d753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      // 'https://images.unsplash.com/photo-1631541410846-324d7daab52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-      // 'https://images.unsplash.com/photo-1653415739432-6a5296e5605c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+      blackBangle
     ],
-    colors: ['Brown', 'Black', 'Burgundy'],
-    materials: ['Full-grain Leather', 'Leather Sole'],
-    isFeatured: false,
+    colors: ['Gold', 'Black'],
+    materials: ['18k Gold', 'Stainless Steel', 'Premium Metal'],
+    isFeatured: true,
     isNewArrival: true,
     inStock: true
   },
