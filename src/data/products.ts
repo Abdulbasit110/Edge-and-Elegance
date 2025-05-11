@@ -23,6 +23,8 @@ import rolexGreenSilverWatch from '@/assets/images/men/rolex green silver watch.
 import rolexGoldBlueWatch from '@/assets/images/men/rolex gold blue watch.jpg';
 import rolexBlackSilverWatch from '@/assets/images/men/rolex black silver watch.jpg';
 import rolexGoldBlackWatch from '@/assets/images/men/rolex gold black watch.jpg';
+import patekPhilippeWhiteDialWatch from '@/assets/images/men/patek philippe while dial watch.jpg';
+import patekPhilippeWhiteBlueWatch from '@/assets/images/men/patek philippe while blue watch.jpg';
 // women
 import chanelNeckChain from '@/assets/images/women/chanel neck chain.jpg'
 import heartChain from '@/assets/images/women/heart chain.jpg'
@@ -392,6 +394,25 @@ export const products: Product[] = [
     ],
     colors: ['Gold-Black', 'Black-Silver', 'Gold-Blue', 'Green-Silver', 'Silver-Blue'],
     materials: ['Stainless Steel', '18k Gold', 'Sapphire Crystal'],
+    isFeatured: true,
+    isNewArrival: true,
+    inStock: true
+  },
+  {
+    id: 'm16',
+    name: 'Patek Philippe Luxury Watch Duo',
+    description: 'Exclusive Patek Philippe watch collection featuring two stunning timepieces - a classic white dial and an elegant white-blue combination, perfect for the sophisticated gentleman.',
+    price: 3199,
+    category: 'jewelry',
+    subcategory: 'watches',
+    gender: 'men',
+    image: patekPhilippeWhiteDialWatch,
+    images: [
+      patekPhilippeWhiteDialWatch,
+      patekPhilippeWhiteBlueWatch
+    ],
+    colors: ['White', 'White-Blue'],
+    materials: ['Stainless Steel', 'Sapphire Crystal', 'Swiss Movement'],
     isFeatured: true,
     isNewArrival: true,
     inStock: true
