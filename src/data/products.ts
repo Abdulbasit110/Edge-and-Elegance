@@ -25,6 +25,8 @@ import rolexBlackSilverWatch from '@/assets/images/men/rolex black silver watch.
 import rolexGoldBlackWatch from '@/assets/images/men/rolex gold black watch.jpg';
 import patekPhilippeWhiteDialWatch from '@/assets/images/men/patek philippe while dial watch.jpg';
 import patekPhilippeWhiteBlueWatch from '@/assets/images/men/patek philippe while blue watch.jpg';
+import rolexSuperlativeBlackSilver from '@/assets/images/men/rolex superlative black and silver.jpg';
+import rolexSuperlativeGoldSilver from '@/assets/images/men/rolex superlative gold and silver.jpg';
 // women
 import chanelNeckChain from '@/assets/images/women/chanel neck chain.jpg'
 import heartChain from '@/assets/images/women/heart chain.jpg'
@@ -413,6 +415,25 @@ export const products: Product[] = [
     ],
     colors: ['White', 'White-Blue'],
     materials: ['Stainless Steel', 'Sapphire Crystal', 'Swiss Movement'],
+    isFeatured: true,
+    isNewArrival: true,
+    inStock: true
+  },
+  {
+    id: 'm17',
+    name: 'Rolex Superlative Chronometer Collection',
+    description: 'Premium Rolex Superlative Chronometer watches featuring two exquisite designs - a sophisticated black and silver combination and an elegant gold and silver masterpiece, perfect for the distinguished gentleman.',
+    price: 2499,
+    category: 'jewelry',
+    subcategory: 'watches',
+    gender: 'men',
+    image: rolexSuperlativeGoldSilver,
+    images: [
+      rolexSuperlativeGoldSilver,
+      rolexSuperlativeBlackSilver
+    ],
+    colors: ['Gold-Silver', 'Black-Silver'],
+    materials: ['Stainless Steel', '18k Gold', 'Sapphire Crystal', 'Swiss Movement'],
     isFeatured: true,
     isNewArrival: true,
     inStock: true
