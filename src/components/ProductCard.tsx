@@ -12,6 +12,7 @@ interface ProductCardProps {
     price: number;
     image: string;
     gender: "men" | "women";
+    actualPrice:string
   };
 }
 
@@ -58,6 +59,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </Button>
         <div className="product-card-content">
           <h3 className="product-card-title">{product.name}</h3>
+          {product.actualPrice &&<del className="product-card-price">Rs.{product.actualPrice}</del>}
           <p className="product-card-price">Rs.{product.price.toFixed(2)}</p>
         </div>
       </Link>

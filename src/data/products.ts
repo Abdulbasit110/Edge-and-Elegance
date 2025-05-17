@@ -38,6 +38,11 @@ import goldenBallChain from '@/assets/images/women/Golden Ball Chain.jpg'
 import goldPinkFashionEarRings from '@/assets/images/women/gold pink ear rings.jpg'
 import goldBlueFashionEarRings from '@/assets/images/women/gold blue ear rings.jpg'
 import goldVersaceKara from '@/assets/images/women/gold versace kara.jpg'
+import goldPlusKara from '@/assets/images/women/Golden plus kara.jpg'
+import goldCloverSet from '@/assets/images/women/gold clover set.jpg'
+import goldDuckDiamondKara from '@/assets/images/women/Gold Duck diamond kara.jpg'
+import goldCloverCompleteSet from '@/assets/images/women/gold clover .jpg'
+import goldDuckChain from '@/assets/images/women/Gold Duck Chain.jpg'
 export interface Product {
   id: string;
   name: string;
@@ -53,6 +58,7 @@ export interface Product {
   isFeatured: boolean;
   isNewArrival: boolean;
   inStock: boolean;
+  actualPrice? : number;
 }
 
 export const products: Product[] = [
@@ -573,7 +579,93 @@ export const products: Product[] = [
     isNewArrival: false,
     inStock: true
   },
-  
+  {
+    id: 'w9',
+    name: 'Golden Plus Kara',
+    description: 'Golden Plus kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
+    price: 799,
+    category: 'jewelry',
+    subcategory: 'braclets',
+    gender: 'women',
+    image: goldPlusKara,
+    images: [
+      goldPlusKara],
+      colors: ['Gold',],
+      materials: ["metal"],
+      isFeatured: true,
+      isNewArrival: false,
+      inStock: true
+    },
+    {
+      id: 'w10',
+      name: 'Golden Clover Set',
+      description: 'Golden Clover Set with a stylish design, perfect for adding a touch of elegance to any outfit.',
+      price:899,
+      category: 'jewelry',
+      subcategory: 'sets',
+      gender: 'women',
+      image: goldCloverSet,
+      images: [
+        goldCloverSet],
+      colors: ['Gold',],
+      materials: ["metal"],
+      isFeatured: true,
+      isNewArrival: false,
+      inStock: true
+    },
+    {
+      id: 'w11',
+      name: 'Golden Diamond Duck Kara',
+      description: 'Golden Diamond Duck Kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
+      price:499,
+      category: 'jewelry',
+      subcategory: 'braclets',
+      gender: 'women',
+      image: goldDuckDiamondKara,
+      images: [
+        goldDuckDiamondKara],
+      colors: ['Gold',],
+      materials: ["metal"],
+      isFeatured: true,
+      isNewArrival: false,
+      inStock: true
+    },
+    {
+      id: 'w12',
+      name: 'Golden Clover Complete Set',
+      description: 'Golden Clover Complete Set with a stylish design, perfect for adding a touch of elegance to any outfit.',
+      price:2499,
+      category: 'jewelry',
+      subcategory: 'sets',
+      gender: 'women',
+      image: goldCloverCompleteSet,
+      images: [
+        goldCloverCompleteSet],
+      colors: ['Gold',],
+      materials: ["metal"],
+      isFeatured: true,
+      isNewArrival: false,
+      inStock: true
+    },
+    { 
+      id: 'w13',
+      name: 'Gold Duck Chain',
+      description: 'Gold Duck Chain with a stylish design, perfect for adding a touch of elegance to any outfit.',
+      price:499,
+      category: 'jewelry',
+      subcategory: 'necklaces',
+      gender: 'women',
+      image: goldDuckChain,
+      images: [
+        goldDuckChain],
+      colors: ['Gold',],
+      materials: ["metal"],
+      isFeatured: true,
+      isNewArrival: false,
+      inStock: true
+    }
+    
+    
 ];
 
 export const getFeaturedProducts = () => products.filter(product => product.isFeatured);
