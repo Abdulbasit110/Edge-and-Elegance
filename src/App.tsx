@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,6 +11,7 @@ import WomenCollection from "./pages/WomenCollection";
 import ProductDetail from "./pages/ProductDetail";
 import Wishlist from "./pages/Wishlist";
 import NotFound from "./pages/NotFound";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +21,7 @@ const App = () => (
       <WishlistProvider>
         <Toaster />
         <Sonner />
+        <WhatsAppButton />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />

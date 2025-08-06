@@ -17,10 +17,10 @@ const MenCollection = () => {
 
   const priceRanges = [
     "All",
-    "Under $100",
-    "$100 - $200",
-    "$200 - $300",
-    "Over $300",
+    "Under 100",
+    "100 - 200",
+    "200 - 300",
+    "Over 300",
   ];
   const [selectedPriceRange, setSelectedPriceRange] = useState("All");
 
@@ -46,17 +46,17 @@ const MenCollection = () => {
 
     // Apply price range filter
     if (priceRange !== "All") {
-      if (priceRange === "Under $100") {
+      if (priceRange === "Under 100") {
         filtered = filtered.filter((product) => product.price < 100);
-      } else if (priceRange === "$100 - $200") {
+      } else if (priceRange === "100 - 200") {
         filtered = filtered.filter(
           (product) => product.price >= 100 && product.price <= 200
         );
-      } else if (priceRange === "$200 - $300") {
+      } else if (priceRange === "200 - 300") {
         filtered = filtered.filter(
           (product) => product.price > 200 && product.price <= 300
         );
-      } else if (priceRange === "Over $300") {
+      } else if (priceRange === "Over 300") {
         filtered = filtered.filter((product) => product.price > 300);
       }
     }
