@@ -44,6 +44,7 @@ import goldDuckDiamondKara from '@/assets/images/women/Gold Duck diamond kara.jp
 import goldCloverCompleteSet from '@/assets/images/women/gold clover .jpg'
 import goldDuckChain from '@/assets/images/women/Gold Duck Chain.jpg'
 import goldHeartPendantNecklace from '@/assets/images/women/gold heart pendant necklace.jpeg'
+import damasGoldWatch from '@/assets/images/women/damas gold watch.jpeg'
 import goldInfinityNecklace from '@/assets/images/women/gold infinity necklace.jpeg'
 export interface Product {
   id: string;
@@ -699,9 +700,24 @@ export const products: Product[] = [
       isFeatured: true,
       isNewArrival: true,
       inStock: true
+    },
+    {
+      id: 'w16',
+      name: 'Gold Diamond Watch',
+      description: 'Luxurious gold watch featuring a stunning diamond-encrusted bezel and lugs. The watch showcases a vibrant gold dial with intricate geometric pattern, elegant gold-tone hands, and a sophisticated multi-link bracelet. A perfect blend of elegance and luxury.',
+      price: 4000,
+      category: 'jewelry',
+      subcategory: 'watches',
+      gender: 'women',
+      image: damasGoldWatch,
+      images: [
+        damasGoldWatch],
+      colors: ['Gold'],
+      materials: ['18k Gold', 'Diamond', 'Stainless Steel'],
+      isFeatured: true,
+      isNewArrival: true,
+      inStock: true
     }
-    
-    
 ];
 
 export const getFeaturedProducts = () => products.filter(product => product.isFeatured);
