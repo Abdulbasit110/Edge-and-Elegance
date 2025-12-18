@@ -43,6 +43,8 @@ import goldCloverSet from '@/assets/images/women/gold clover set.jpg'
 import goldDuckDiamondKara from '@/assets/images/women/Gold Duck diamond kara.jpg'
 import goldCloverCompleteSet from '@/assets/images/women/gold clover .jpg'
 import goldDuckChain from '@/assets/images/women/Gold Duck Chain.jpg'
+import goldHeartPendantNecklace from '@/assets/images/women/gold heart pendant necklace.jpeg'
+import goldInfinityNecklace from '@/assets/images/women/gold infinity necklace.jpeg'
 export interface Product {
   id: string;
   name: string;
@@ -442,28 +444,28 @@ export const products: Product[] = [
     inStock: true
   },
   // Women's Products
-  {
-    id: 'w1',
-    name: 'Chanel Neck Chain',
-    description: 'Luxury Chanel neck chain with a stylish design, perfect for adding a touch of elegance to any outfit.',
-    price: 399,
-    category: 'jewelry',
-    subcategory: 'necklaces',
-    gender: 'women',
-    image:chanelNeckChain , images: [
-      chanelNeckChain,
-       ],
-    colors: ['White Gold', 'Yellow Gold', 'Rose Gold'],
-    materials: ['18k Gold', 'Diamond'],
-    isFeatured: true,
-    isNewArrival: false,
-    inStock: true
-  },
+  // {
+  //   id: 'w1',
+  //   name: 'Chanel Neck Chain',
+  //   description: 'Luxury Chanel neck chain with a stylish design, perfect for adding a touch of elegance to any outfit.',
+  //   price: 399,
+  //   category: 'jewelry',
+  //   subcategory: 'necklaces',
+  //   gender: 'women',
+  //   image:chanelNeckChain , images: [
+  //     chanelNeckChain,
+  //      ],
+  //   colors: ['White Gold', 'Yellow Gold', 'Rose Gold'],
+  //   materials: ['18k Gold', 'Diamond'],
+  //   isFeatured: true,
+  //   isNewArrival: false,
+  //   inStock: true
+  // },
   {
     id: 'w2',
     name: 'Golden Heart Chain',
     description: 'Luxury Golden Heart Chain with a stylish design, perfect for adding a touch of elegance to any outfit.',
-    price: 399,
+    price: 899,
     category: 'jewelry',
     subcategory: 'necklaces',
     gender: 'women',
@@ -480,7 +482,7 @@ export const products: Product[] = [
     id: 'w3',
     name: 'Floral Braclet',
     description: 'Luxury floral braclet with a stylish design, perfect for adding a touch of elegance to any outfit.',
-    price: 499,
+    price: 699,
     category: 'jewelry',
     subcategory: 'braclets',
     gender: 'women',
@@ -497,7 +499,7 @@ export const products: Product[] = [
     id: 'w4',
     name: 'Diamond Heart Kara',
     description: 'Diamond Heart Kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
-    price: 499,
+    price: 899,
     category: 'jewelry',
     subcategory: 'braclets',
     gender: 'women',
@@ -510,28 +512,28 @@ export const products: Product[] = [
     isNewArrival: false,
     inStock: true
   },
-  {
-    id: 'w5',
-    name: 'Golden Fashionable Kara',
-    description: 'Golden Fashionable Kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
-    price: 799,
-    category: 'jewelry',
-    subcategory: 'braclets',
-    gender: 'women',
-    image: goldenFashionableKara,
-    images: [
-      goldenFashionableKara,],
-    colors: ['Gold'],
-    materials: ["metal"],
-    isFeatured: true,
-    isNewArrival: false,
-    inStock: true
-  },
+  // {
+  //   id: 'w5',
+  //   name: 'Golden Fashionable Kara',
+  //   description: 'Golden Fashionable Kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
+  //   price: 799,
+  //   category: 'jewelry',
+  //   subcategory: 'braclets',
+  //   gender: 'women',
+  //   image: goldenFashionableKara,
+  //   images: [
+  //     goldenFashionableKara,],
+  //   colors: ['Gold'],
+  //   materials: ["metal"],
+  //   isFeatured: true,
+  //   isNewArrival: false,
+  //   inStock: true
+  // },
   {
     id: 'w6',
     name: 'Golden Ball Chain',
     description: 'Golden Ball Chain with a stylish design, perfect for adding a touch of elegance to any outfit.',
-    price: 699,
+    price: 799,
     category: 'jewelry',
     subcategory: 'necklaces',
     gender: 'women',
@@ -562,28 +564,28 @@ export const products: Product[] = [
     isNewArrival: false,
     inStock: true
   },
-  {
-    id: 'w8',
-    name: 'Golden versace kara',
-    description: 'Golden versace kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
-    price: 699,
-    category: 'jewelry',
-    subcategory: 'braclets',
-    gender: 'women',
-    image: goldVersaceKara,
-    images: [
-      goldVersaceKara],
-    colors: ['Pink','Blue',],
-    materials: ["metal"],
-    isFeatured: true,
-    isNewArrival: false,
-    inStock: true
-  },
+  // {
+  //   id: 'w8',
+  //   name: 'Golden versace kara',
+  //   description: 'Golden versace kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
+  //   price: 699,
+  //   category: 'jewelry',
+  //   subcategory: 'braclets',
+  //   gender: 'women',
+  //   image: goldVersaceKara,
+  //   images: [
+  //     goldVersaceKara],
+  //   colors: ['Pink','Blue',],
+  //   materials: ["metal"],
+  //   isFeatured: true,
+  //   isNewArrival: false,
+  //   inStock: true
+  // },
   {
     id: 'w9',
     name: 'Golden Plus Kara',
     description: 'Golden Plus kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
-    price: 799,
+    price: 899,
     category: 'jewelry',
     subcategory: 'braclets',
     gender: 'women',
@@ -617,7 +619,7 @@ export const products: Product[] = [
       id: 'w11',
       name: 'Golden Diamond Duck Kara',
       description: 'Golden Diamond Duck Kara with a stylish design, perfect for adding a touch of elegance to any outfit.',
-      price:499,
+      price:899,
       category: 'jewelry',
       subcategory: 'braclets',
       gender: 'women',
@@ -651,7 +653,7 @@ export const products: Product[] = [
       id: 'w13',
       name: 'Gold Duck Chain',
       description: 'Gold Duck Chain with a stylish design, perfect for adding a touch of elegance to any outfit.',
-      price:499,
+      price:799,
       category: 'jewelry',
       subcategory: 'necklaces',
       gender: 'women',
@@ -662,6 +664,40 @@ export const products: Product[] = [
       materials: ["metal"],
       isFeatured: true,
       isNewArrival: false,
+      inStock: true
+    },
+    {
+      id: 'w14',
+      name: 'Gold Interlocking Heart Pendant Necklace',
+      description: 'Elegant gold necklace featuring a delicate interlocking heart pendant design. The smaller heart is adorned with sparkling gemstones, while the larger heart forms a smooth open outline, creating a romantic and sophisticated piece perfect for any occasion.',
+      price: 799,
+      category: 'jewelry',
+      subcategory: 'necklaces',
+      gender: 'women',
+      image: goldHeartPendantNecklace,
+      images: [
+        goldHeartPendantNecklace],
+      colors: ['Gold'],
+      materials: ['18k Gold', 'Diamond'],
+      isFeatured: true,
+      isNewArrival: true,
+      inStock: true
+    },
+    {
+      id: 'w15',
+      name: 'Gold Infinity Symbol Necklace',
+      description: 'Minimalist and elegant gold necklace featuring a polished infinity symbol pendant. This timeless piece symbolizes eternal love and endless possibilities, crafted with a delicate chain and smooth, three-dimensional pendant that catches the light beautifully.',
+      price: 799,
+      category: 'jewelry',
+      subcategory: 'necklaces',
+      gender: 'women',
+      image: goldInfinityNecklace,
+      images: [
+        goldInfinityNecklace],
+      colors: ['Gold'],
+      materials: ['18k Gold'],
+      isFeatured: true,
+      isNewArrival: true,
       inStock: true
     }
     
