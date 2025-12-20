@@ -44,7 +44,7 @@ const Navbar = () => {
         className={`fixed top-0 left-0 right-0 transition-all duration-500 z-50 ${
           isScrolled 
             ? "py-4 bg-white/80 backdrop-blur-lg shadow-sm border-b border-neutral-100" 
-            : "py-8 bg-transparent"
+            : "py-5 bg-transparent"
         }`}
       >
         <div className="container-custom">
