@@ -32,7 +32,7 @@ import blackBangle from '@/assets/images/men/black bangle.jpg';
 import chanelNeckChain from '@/assets/images/women/chanel neck chain.jpg'
 import heartChain from '@/assets/images/women/heart chain.jpg'
 import blackFloralBracelet from '@/assets/images/women/black floral bracelet.jpg'
-import diamondHeartKara from '@/assets/images/women/diamond  heart kara.jpg'
+import diamondHeartKara from '@/assets/images/women/diamond  heart kara.jpeg'
 import goldenFashionableKara from '@/assets/images/women/Golden fashionable kara.jpg'
 import goldenBallChain from '@/assets/images/women/Golden Ball Chain.jpg'
 import goldPinkFashionEarRings from '@/assets/images/women/gold pink ear rings.jpg'
@@ -46,6 +46,11 @@ import goldDuckChain from '@/assets/images/women/Gold Duck Chain.jpg'
 import goldHeartPendantNecklace from '@/assets/images/women/gold heart pendant necklace.jpeg'
 import damasGoldWatch from '@/assets/images/women/damas gold watch.jpeg'
 import goldInfinityNecklace from '@/assets/images/women/gold infinity necklace.jpeg'
+import goldCloverBracelet from '@/assets/images/women/gold clover bracelet.jpeg'
+import pearlDiamondBracelet from '@/assets/images/women/pearl diamond bracelet.jpeg'
+import goldenMeshBracelet from '@/assets/images/women/golden mesh bracelet.jpeg'
+import goldenMiniHeartsBracelet from '@/assets/images/women/golden mini hearts bracelet.jpeg'
+import WomengoldenBangle from '@/assets/images/women/golden bangle.png'
 export interface Product {
   id: string;
   name: string;
@@ -58,7 +63,7 @@ export interface Product {
   images: string[];
   colors: string[];
   materials: string[];
-  isFeatured: boolean;
+  isFeatured?: boolean;
   isNewArrival: boolean;
   inStock: boolean;
   actualPrice? : number;
@@ -84,7 +89,7 @@ export const products: Product[] = [
     ],
     colors: ['Black', 'Brown', 'Navy'],
     materials: ['Leather', 'Stainless Steel'],
-    isFeatured: true,
+    // isFeatured: true,
     isNewArrival: false,
     inStock: true
   },
@@ -106,7 +111,7 @@ export const products: Product[] = [
     ],
     colors: ['Silver', 'Gold', 'Matte Black'],
     materials: ['Sterling Silver', 'Stainless Steel'],
-    isFeatured: false,
+    isFeatured: true,
     isNewArrival: true,
     inStock: true
   },
@@ -131,7 +136,7 @@ export const products: Product[] = [
     ],
     colors: ['Black', 'Brown', 'Tan'],
     materials: ['Full-grain Leather'],
-    isFeatured: true,
+    // isFeatured: true,
     isNewArrival: false,
     inStock: true
   },
@@ -154,7 +159,7 @@ export const products: Product[] = [
     ],
     colors: ['Black', 'Dark Brown'],
     materials: ['Full-grain Leather', 'Brass Hardware'],
-    isFeatured: true,
+    // isFeatured: true,
     isNewArrival: false,
     inStock: true
   },
@@ -177,8 +182,8 @@ export const products: Product[] = [
     ],
     colors: ['Brown', 'Black', 'Burgundy'],
     materials: ['Full-grain Leather', 'Leather Sole'],
-    isFeatured: false,
-    isNewArrival: true,
+    // isFeatured: true,
+    isNewArrival: false,
     inStock: true
   },
   {
@@ -196,8 +201,8 @@ export const products: Product[] = [
     ],
     colors: ['Gold', 'Black'],
     materials: ['18k Gold', 'Stainless Steel', 'Premium Metal'],
-    isFeatured: true,
-    isNewArrival: true,
+    // isFeatured: true,
+    isNewArrival: false,
     inStock: true
   },
   {
@@ -220,7 +225,7 @@ export const products: Product[] = [
     colors: ['Brown', 'Black', 'Burgundy'],
     materials: ['Full-grain Leather', 'Leather Sole'],
     isFeatured: false,
-    isNewArrival: true,
+    isNewArrival: false,
     inStock: true
   },
   {
@@ -243,7 +248,7 @@ export const products: Product[] = [
     colors: ['Brown', 'Black', 'Burgundy'],
     materials: ['Full-grain Leather', 'Leather Sole'],
     isFeatured: false,
-    isNewArrival: true,
+    isNewArrival: false,
     inStock: true
   },
   {
@@ -266,7 +271,7 @@ export const products: Product[] = [
     colors: ['Brown', 'Black', 'Burgundy'],
     materials: ['metal'],
     isFeatured: false,
-    isNewArrival: true,
+    isNewArrival: false,
     inStock: true
   },
   {
@@ -289,7 +294,7 @@ export const products: Product[] = [
     colors: ['Brown', 'Black', 'Burgundy'],
     materials: ['metal'],
     isFeatured: false,
-    isNewArrival: true,
+    isNewArrival: false,
     inStock: true
   },
   {
@@ -312,14 +317,14 @@ export const products: Product[] = [
     colors: ['Brown', 'Black', 'Burgundy'],
     materials: ['metal'],
     isFeatured: false,
-    isNewArrival: true,
+    isNewArrival: false,
     inStock: true
   },
   {
     id: 'm12',
     name: 'Golden Locket Chain',
     description: 'Stylish golden locket chain made from high-quality materials, perfect for adding a touch of elegance to any outfit.',
-    price: 399,
+    price: 799,
     category: 'jewelry',
     subcategory: 'necklaces',
     gender: 'men',
@@ -358,7 +363,7 @@ export const products: Product[] = [
     colors: ['Brown', 'Black', 'Burgundy'],
     materials: ['metal'],
     isFeatured: false,
-    isNewArrival: true,
+    isNewArrival: false,
     inStock: true
   },
   {
@@ -381,7 +386,7 @@ export const products: Product[] = [
     colors: ['Brown', 'Black', 'Burgundy'],
     materials: ['metal'],
     isFeatured: false,
-    isNewArrival: true,
+    isNewArrival: false,
     inStock: true
   },
   {
@@ -402,8 +407,8 @@ export const products: Product[] = [
     ],
     colors: ['Gold-Black', 'Black-Silver', 'Gold-Blue', 'Green-Silver', 'Silver-Blue'],
     materials: ['Stainless Steel', '18k Gold', 'Sapphire Crystal'],
-    isFeatured: true,
-    isNewArrival: true,
+    // isFeatured: true,
+    isNewArrival: false,
     inStock: true
   },
   {
@@ -421,8 +426,8 @@ export const products: Product[] = [
     ],
     colors: ['White', 'White-Blue'],
     materials: ['Stainless Steel', 'Sapphire Crystal', 'Swiss Movement'],
-    isFeatured: true,
-    isNewArrival: true,
+    // isFeatured: true,
+    isNewArrival: false,
     inStock: true
   },
   {
@@ -440,8 +445,8 @@ export const products: Product[] = [
     ],
     colors: ['Gold-Silver', 'Black-Silver'],
     materials: ['Stainless Steel', '18k Gold', 'Sapphire Crystal', 'Swiss Movement'],
-    isFeatured: true,
-    isNewArrival: true,
+    // isFeatured: true,
+    isNewArrival: false,
     inStock: true
   },
   // Women's Products
@@ -464,8 +469,8 @@ export const products: Product[] = [
   // },
   {
     id: 'w2',
-    name: 'Golden Heart Chain',
-    description: 'Luxury Golden Heart Chain with a stylish design, perfect for adding a touch of elegance to any outfit.',
+    name: '18k Golden Heart Chain',
+    description: 'Luxury 18k Golden Heart Chain with a stylish design, perfect for adding a touch of elegance to any outfit.',
     price: 899,
     category: 'jewelry',
     subcategory: 'necklaces',
@@ -476,7 +481,7 @@ export const products: Product[] = [
     colors: ['Gold'],
     materials: ['Freshwater Pearl', 'Sterling Silver'],
     isFeatured: true,
-    isNewArrival: true,
+    isNewArrival: false,
     inStock: true
   },
   {
@@ -492,7 +497,7 @@ export const products: Product[] = [
       blackFloralBracelet,],
     colors: ['Gold'],
     materials: ["metal"],
-    isFeatured: true,
+    // isFeatured: true,
     isNewArrival: false,
     inStock: true
   },
@@ -509,7 +514,7 @@ export const products: Product[] = [
       diamondHeartKara,],
     colors: ['Gold'],
     materials: ["metal"],
-    isFeatured: true,
+    // isFeatured: true,
     isNewArrival: false,
     inStock: true
   },
@@ -561,7 +566,7 @@ export const products: Product[] = [
     goldBlueFashionEarRings],
     colors: ['Pink','Blue',],
     materials: ["metal"],
-    isFeatured: true,
+    // isFeatured: true,
     isNewArrival: false,
     inStock: true
   },
@@ -595,7 +600,7 @@ export const products: Product[] = [
       goldPlusKara],
       colors: ['Gold',],
       materials: ["metal"],
-      isFeatured: true,
+      // isFeatured: true,
       isNewArrival: false,
       inStock: true
     },
@@ -612,7 +617,7 @@ export const products: Product[] = [
         goldCloverSet],
       colors: ['Gold',],
       materials: ["metal"],
-      isFeatured: true,
+      // isFeatured: true,
       isNewArrival: false,
       inStock: true
     },
@@ -629,7 +634,7 @@ export const products: Product[] = [
         goldDuckDiamondKara],
       colors: ['Gold',],
       materials: ["metal"],
-      isFeatured: true,
+      // isFeatured: true,
       isNewArrival: false,
       inStock: true
     },
@@ -646,7 +651,7 @@ export const products: Product[] = [
         goldCloverCompleteSet],
       colors: ['Gold',],
       materials: ["metal"],
-      isFeatured: true,
+      // isFeatured: true,
       isNewArrival: false,
       inStock: true
     },
@@ -663,7 +668,7 @@ export const products: Product[] = [
         goldDuckChain],
       colors: ['Gold',],
       materials: ["metal"],
-      isFeatured: true,
+      // isFeatured: true,
       isNewArrival: false,
       inStock: true
     },
@@ -680,8 +685,8 @@ export const products: Product[] = [
         goldHeartPendantNecklace],
       colors: ['Gold'],
       materials: ['18k Gold', 'Diamond'],
-      isFeatured: true,
-      isNewArrival: true,
+      // isFeatured: true,
+      isNewArrival: false,
       inStock: true
     },
     {
@@ -714,10 +719,96 @@ export const products: Product[] = [
         damasGoldWatch],
       colors: ['Gold'],
       materials: ['18k Gold', 'Diamond', 'Stainless Steel'],
-      isFeatured: true,
+      // isFeatured: true,
       isNewArrival: true,
       inStock: true
-    }
+    },
+    {
+      id: 'w17',
+      name: 'Golden Clover Bracelet',
+      description: 'Luxurious Golden Clover Bracelet with a stylish design, perfect for adding a touch of elegance to any outfit.',
+      price: 799,
+      category: 'jewelry',
+      subcategory: 'braclets',
+      gender: 'women',
+      image: goldCloverBracelet,
+      images: [
+        goldCloverBracelet],
+      colors: ['Gold'],
+      materials: ['Stainless Steel'],
+      // isFeatured: true,
+      isNewArrival: false,
+      inStock: true
+    },
+    {
+      id: 'w18',
+      name: 'Pearl Diamond Bracelet',
+      description: 'Luxurious Pearl Diamond Bracelet with a stylish design, perfect for adding a touch of elegance to any outfit.',
+      price: 799,
+      category: 'jewelry',
+      subcategory: 'braclets',
+      gender: 'women',
+      image: pearlDiamondBracelet,
+      images: [
+        pearlDiamondBracelet],
+      colors: ['Silver'],
+      materials: ['Stainless Steel'],
+      // isFeatured: true,
+      isNewArrival: false,
+      inStock: true
+    },
+    {
+      id: 'w19',
+      name: 'Golden Mesh Bracelet',
+      description: 'Luxurious Golden Mesh Bracelet with a stylish design, perfect for adding a touch of elegance to any outfit.',
+      price: 799,
+      category: 'jewelry',
+      subcategory: 'braclets',
+      gender: 'women',
+      image: goldenMeshBracelet,
+      images: [
+        goldenMeshBracelet],
+      colors: ['Gold'],
+      materials: ['Stainless Steel'],
+      // isFeatured: true,
+      isNewArrival: false,
+      inStock: true
+    },
+    {
+      id: 'w20',
+      name: 'Golden Mini Hearts Bracelet',
+      description: 'Luxurious Golden Mini Hearts Bracelet with a stylish design, perfect for adding a touch of elegance to any outfit.',
+      price: 799,
+      category: 'jewelry',
+      subcategory: 'braclets',
+      gender: 'women',
+      image: goldenMiniHeartsBracelet,
+      images: [
+        goldenMiniHeartsBracelet],
+      colors: ['Gold'],
+      materials: ['Stainless Steel'],
+      // isFeatured: true,
+      isNewArrival: false,
+      inStock: true
+    },
+    {
+      id: 'w21',
+      name: 'Golden Bangle',
+      description: 'Luxurious Golden Bangle with a stylish diamond design, perfect for adding a touch of elegance to any outfit.',
+      price: 799,
+      category: 'jewelry',
+      subcategory: 'braclets',
+      gender: 'women',
+      image: WomengoldenBangle,
+      images: [
+        WomengoldenBangle],
+      colors: ['Gold'],
+      materials: ['Stainless Steel'],
+      // isFeatured: true,
+      isNewArrival: false,
+      inStock: true
+    },
+    
 ];
 
 export const getFeaturedProducts = () => products.filter(product => product.isFeatured);
