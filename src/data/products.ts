@@ -8,7 +8,7 @@ import blueRolexBraclet from '@/assets/images/men/blur rolex braclet.jpg'
 import blackRolexBraclet from '@/assets/images/men/black rolex bracelt.jpg'
 import silwerblackRolexBraclet from '@/assets/images/men/silwerand black.jpg'
 import blackFashionBraclet from '@/assets/images/men/black fashion braclet.jpg'
-import fashionGoldenRolexChain from '@/assets/images/men/golden rolex braclet with fashionable chain.jpg'
+import fashionGoldenRolexChain from '@/assets/images/men/golden rolex braclet with fashionable chain.jpeg'
 import goldenBangle from '@/assets/images/men/golden bangle.jpg'
 import locketNecklace from '@/assets/images/men/silwer locket necklace.jpg'
 import silmNeckchain from '@/assets/images/men/slim silwer neckchain.jpg'
@@ -49,7 +49,7 @@ import goldInfinityNecklace from '@/assets/images/women/gold infinity necklace.j
 import goldCloverBracelet from '@/assets/images/women/gold clover bracelet.jpeg'
 import pearlDiamondBracelet from '@/assets/images/women/pearl diamond bracelet.jpeg'
 import goldenMeshBracelet from '@/assets/images/women/golden mesh bracelet.jpeg'
-import goldenMiniHeartsBracelet from '@/assets/images/women/golden mini hearts bracelet.jpeg'
+import goldenMiniHeartsBracelet from '@/assets/images/women/Golden mini hearts bracelet.jpeg'
 import WomengoldenBangle from '@/assets/images/women/golden bangle.png'
 export interface Product {
   id: string;
